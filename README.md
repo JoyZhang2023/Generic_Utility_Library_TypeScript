@@ -36,4 +36,7 @@ Example usage: `mapObject({a: 1, b: 2}, x => x.toString())` should return `{a: "
 Implement a generic function `filterArray<T>` that filters elements of an array based on a predicate function. The predicate function should take an element of type `T` and return a boolean.
 Example usage: `filterArray<number>([1, 2, 3, 4], x => x % 2 === 0)` should return `[2, 4]`.
 
+## Demonstration output
+![image](https://github.com/JoyZhang2023/Generic_Utility_Library_TypeScript/assets/137982978/0210a697-2011-44cf-9d00-41aadae3193c)
+
 
