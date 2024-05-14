@@ -17,15 +17,21 @@ function reverseArray<Type>(arg: Type[]): Type[] {
 let test2 : number[] = reverseArray<number>([1,2,3]);
 console.log(test2);
 
-/*
-// generic object mapper
-function mapObject<K extends String | number, V, U>(obj:{[key: K]: V}, mapFn: (val: V)=> U): {[key: K]: U} {
 
+// generic object mapper
+function mapObject<K extends string | number, V, U>(obj: Record<K, V>, mapFn: (value:V)=> U): Record<K, U> {
+    let output: Record<K, U> = {} as Record<K, U>;
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            output[key] = mapFn(obj[key]);
+        }
+    }
+    return output;
 }
 
 // test generic object mapper
 let test3 = mapObject({a:1, b:2}, x => x.toString());
-console.log(test3); */
+console.log(test3); 
 
 
 // generic filter function which filters elements of any array based on a predicate function which returns a boolean
