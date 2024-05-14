@@ -37,6 +37,7 @@ Implement a generic function `filterArray<T>` that filters elements of an array 
 Example usage: `filterArray<number>([1, 2, 3, 4], x => x % 2 === 0)` should return `[2, 4]`.
 
 ## Demonstration output
-![image](https://github.com/JoyZhang2023/Generic_Utility_Library_TypeScript/assets/137982978/0210a697-2011-44cf-9d00-41aadae3193c)
+![image](https://github.com/JoyZhang2023/Generic_Utility_Library_TypeScript/assets/137982978/14acc246-b63d-42d7-981e-38719d5ad81d)
+
 
 
